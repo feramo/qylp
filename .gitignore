@@ -1,7 +1,14 @@
 *.pyc
 *.pyo
 /*.patch
-build*/
+#Exclude everything inside build
+/build/*
+#Except conf
+!/build/conf
+#Exclude everything inside conf
+/build/conf/*
+#Except local.conf
+!/build/conf/local.conf
 pyshtables.py
 pstage/
 scripts/oe-git-proxy-socks
